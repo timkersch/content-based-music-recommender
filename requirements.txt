@@ -2,3 +2,4 @@ numpy
 scipy
 keras
 tensorflow
+tables
