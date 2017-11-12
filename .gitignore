@@ -102,3 +102,6 @@ ENV/
 
 .idea
 data/
+
+auth.py
+test.py

@@ -20,7 +20,7 @@ class Dataset:
 			files = glob.glob(os.path.join(root,'*' + self.ext))
 			for f in files:
 				h5 = GETTERS.open_h5_file_read(f)
-				yield GETTERS.get_segments_timbre(h5)
+				yield h5
 				h5.close()
 
 	def apply_to_all_files(self, basedir, func=lambda x: x, ext='.h5'):
